@@ -7,6 +7,9 @@
   <version>1.0</version>
   <packaging>kjar</packaging>
   <name>BusinessRules</name>
+  <properties>
+    <version.org.kie>6.5.0.Final-redhat-2</version.org.kie>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>org.kie</groupId>
