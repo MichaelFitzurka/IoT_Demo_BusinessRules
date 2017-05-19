@@ -92,7 +92,7 @@
       <width>-1</width>
       <header>Errormessage</header>
       <boundName>f1</boundName>
-      <factField>errorMessag</factField>
+      <factField>errorMessage</factField>
       <type>String</type>
       <update>false</update>
     </set-field-col52>
@@ -199,7 +199,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">25</valueNumeric>
+        <valueNumeric class="int">30</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
@@ -234,7 +234,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">26</valueNumeric>
+        <valueNumeric class="int">31</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>

@@ -21,8 +21,8 @@ public class DataSet implements java.io.Serializable
    private java.lang.Integer required;
    @org.kie.api.definition.type.Label(value = "average")
    private java.lang.Float average;
-   @org.kie.api.definition.type.Label(value = "errorMessag")
-   private java.lang.String errorMessag;
+   @org.kie.api.definition.type.Label(value = "errorMessage")
+   private java.lang.String errorMessage;
    @org.kie.api.definition.type.Label(value = "errorCode")
    private java.lang.Integer errorCode;
 
@@ -90,14 +90,14 @@ public class DataSet implements java.io.Serializable
       this.average = average;
    }
 
-   public java.lang.String getErrorMessag()
+   public java.lang.String getErrorMessage()
    {
-      return this.errorMessag;
+      return this.errorMessage;
    }
 
-   public void setErrorMessag(java.lang.String errorMessag)
+   public void setErrorMessage(java.lang.String errorMessage)
    {
-      this.errorMessag = errorMessag;
+      this.errorMessage = errorMessage;
    }
 
    public java.lang.Integer getErrorCode()
@@ -113,7 +113,7 @@ public class DataSet implements java.io.Serializable
    public DataSet(java.lang.String timestamp, java.lang.String deviceType,
          java.lang.Integer deviceID, java.lang.Integer payload,
          java.lang.Integer required, java.lang.Float average,
-         java.lang.String errorMessag, java.lang.Integer errorCode)
+         java.lang.String errorMessage, java.lang.Integer errorCode)
    {
       this.timestamp = timestamp;
       this.deviceType = deviceType;
@@ -121,7 +121,7 @@ public class DataSet implements java.io.Serializable
       this.payload = payload;
       this.required = required;
       this.average = average;
-      this.errorMessag = errorMessag;
+      this.errorMessage = errorMessage;
       this.errorCode = errorCode;
    }
 

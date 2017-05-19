@@ -1,15 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
   <modelVersion>4.0.0</modelVersion>
+
   <groupId>com.redhat.demo.iot.utils</groupId>
   <artifactId>BusinessRules</artifactId>
   <version>1.0</version>
   <packaging>kjar</packaging>
+
   <name>BusinessRules</name>
+
   <properties>
-    <version.org.kie>6.5.0.Final-redhat-2</version.org.kie>
+    <version.org.kie>6.5.0.Final-redhat-5</version.org.kie>
   </properties>
+
+  <repositories>
+    <repository>
+      <id>release.fusesource.org</id>
+      <name>Red Hat GA</name>
+      <url>https://maven.repository.redhat.com/ga</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+    </repository>
+  </repositories>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <id>release.fusesource.org</id>
+      <name>Red Hat GA</name>
+      <url>https://maven.repository.redhat.com/ga</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+    </pluginRepository>
+  </pluginRepositories>
+
   <dependencies>
     <dependency>
       <groupId>org.kie</groupId>
@@ -18,21 +51,16 @@
       <scope>provided</scope>
     </dependency>
   </dependencies>
-  <repositories>
-    <repository>
-      <id>guvnor-m2-repo</id>
-      <name>Guvnor M2 Repo</name>
-      <url>http://104.199.53.44:8080/business-central/maven2/</url>
-    </repository>
-  </repositories>
+
   <build>
     <plugins>
       <plugin>
         <groupId>org.kie</groupId>
         <artifactId>kie-maven-plugin</artifactId>
-        <version>6.5.0.Final-redhat-2</version>
+        <version>${version.org.kie}</version>
         <extensions>true</extensions>
       </plugin>
     </plugins>
   </build>
+
 </project>
